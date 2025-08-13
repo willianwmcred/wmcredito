@@ -93,6 +93,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 const amount = parseFloat(loanValueInput.value);
                 const term = parseInt(loanTermInput.value);
                 const purpose = document.getElementById('loan-purpose').value;
+                const income = document.getElementById('income').value; // pega a renda
+        
                 let rate, purposeText;
                 switch(purpose) {
                     case 'consignado': rate = 1.99; purposeText = "Empréstimo Consignado"; break;
@@ -101,13 +103,17 @@ document.addEventListener('DOMContentLoaded', function() {
                     case 'imovel': rate = 0.8; purposeText = "Financiamento Imobiliário"; break;
                     default: rate = 2.5; purposeText = "Empréstimo";
                 }
+        
                 const installment = calculateInstallment(amount, term, rate);
                 const total = installment * term;
-                const message = `Olá, gostaria de simular um ${purposeText}:\n\n• Valor: ${formatCurrency(amount)}\n• Prazo: ${term} meses`;
+        
+                const message = `Olá, gostaria de simular um ${purposeText}:\n\n• Valor: ${formatCurrency(amount)}\n• Prazo: ${term} meses\n• Renda Mensal: ${formatCurrency(parseFloat(income.replace(',', '.')))}`;
+                
                 const whatsappUrl = `https://wa.me/5541997501215?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');
             });
         }
+        
 
         simulatorForm.addEventListener('submit', function(e) {
             e.preventDefault();
