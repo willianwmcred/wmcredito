@@ -8,8 +8,10 @@
     <meta name="description"
         content="Oferecemos as melhores soluções em crédito pessoal, consignado e financiamentos com as menores taxas do mercado.">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/animate.min.css">
@@ -23,15 +25,15 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BW0443S8JC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BW0443S8JC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-BW0443S8JC');
-</script>
+        gtag('config', 'G-BW0443S8JC');
+    </script>
 </head>
 
 <body>
@@ -199,19 +201,19 @@
                     <script>
                         document.getElementById('contactForm').addEventListener('submit', function (e) {
                             e.preventDefault(); // Evita o envio tradicional do formulário
-    
+
                             const nome = document.getElementById('name').value;
                             const email = document.getElementById('email').value;
                             const telefone = document.getElementById('phone').value;
                             const assunto = document.getElementById('subject').value;
                             const mensagem = document.getElementById('message').value;
-    
+
                             const texto = `Olá, meu nome é ${nome}%0AEmail: ${email}%0ATelefone: ${telefone}%0AAssunto: ${assunto}%0AMensagem: ${mensagem}`;
-    
+
                             // Substitua abaixo pelo seu número de WhatsApp com DDI (por exemplo: 5541999999999)
                             const numero = "5541997501215";
                             const url = `https://wa.me/${numero}?text=${texto}`;
-    
+
                             window.open(url, '_blank'); // Abre o WhatsApp em nova aba
                         });
                     </script>
@@ -268,10 +270,11 @@
 
                     <script src="main.js"></script>
 
-                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-                    <a href="https://wa.me/555541997501215?text=Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações" 
-                       style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow:1px 1px 2px #888;z-index:1000;" 
-                       target="_blank">
+                    <link rel="stylesheet"
+                        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+                    <a href="https://wa.me/555541997501215?text=Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações"
+                        style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow:1px 1px 2px #888;z-index:1000;"
+                        target="_blank">
                         <i style="margin-top:16px" class="fa fa-whatsapp"></i>
                     </a>
 </body>
