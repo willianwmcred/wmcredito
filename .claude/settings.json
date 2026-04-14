@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(ls -lh /c/Users/Home/Desktop/wmcredito/favicon* /c/Users/Home/Desktop/wmcredito/apple*)"
+      "Bash(ls -lh /c/Users/Home/Desktop/wmcredito/favicon* /c/Users/Home/Desktop/wmcredito/apple*)",
+      "Bash(git commit:*)"
     ]
   }
 }
